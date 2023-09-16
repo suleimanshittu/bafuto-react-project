@@ -1,0 +1,144 @@
+.subscribe {
+  display: flex;
+  background-color: #e9f5fa;
+  height: 50vh;
+}
+
+.subscribe .left {
+  width: 50%;
+}
+
+.subscribe .right {
+  width: 50%;
+}
+
+.subscribe .right form {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe .right input {
+  width: 87%;
+  height: 10vh;
+  padding-left: 0.6rem;
+  color: black;
+  font-family: "Heebo", sans-serif;
+  font-size: 0.9rem;
+  margin-top: 3.5rem;
+  border-radius: 0.3rem;
+  border: none;
+  border: 1px solid #dee2e6;
+}
+::placeholder {
+  color: black;
+  font-family: "Heebo", sans-serif;
+}
+
+.subscribe .right button {
+  height: 7.5vh;
+  background-color: #2da4d7;
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  width: 25%;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  font-family: "Heebo", sans-serif;
+}
+.subscribe .left .text {
+  width: 70%;
+}
+
+.subscribe .left p {
+  font-family: "Heebo", sans-serif;
+  color: black;
+  font-size: 1.8rem;
+  padding-top: 3.5rem;
+  padding-left: 5.5rem;
+}
+.subscribe .left p span {
+  font-weight: bold;
+}
+
+.subscribe .left h1 {
+  font-family: "Heebo", sans-serif;
+  color: #ee2334;
+  font-size: 3.6rem;
+  padding-left: 5.5rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .subscribe {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .subscribe .left {
+    width: 100%;
+  }
+
+  .subscribe .right {
+    width: 100%;
+  }
+
+  .subscribe .left .text {
+    text-align: center;
+    width: 100%;
+  }
+
+  .subscribe .left p {
+    font-size: 1.7rem;
+    padding-left: 1rem;
+    padding-top: 2.2rem;
+  }
+
+  .subscribe .left h1 {
+    font-size: 2.8em;
+    padding-left: 1rem;
+  }
+
+  .subscribe .right input {
+    width: 80%;
+    margin: auto;
+    height: 7vh;
+  }
+
+  .subscribe .right button {
+    width: 25%;
+    margin: 1rem auto;
+    font-size: 1rem;
+    height: 5vh;
+    margin-bottom: 3.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .subscribe .left .text {
+    text-align: center;
+    width: 100%;
+  }
+
+  .subscribe .left p {
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .subscribe .left h1 {
+    font-size: 2.3rem;
+    padding-left: 0.5rem;
+  }
+
+  .subscribe .right input {
+    width: 93%;
+    margin-top: 1rem;
+  }
+
+  .subscribe .right button {
+    width: 40%;
+    margin-top: 1rem;
+    height: 6vh;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+  }
+}

@@ -1,0 +1,159 @@
+.software .container {
+  position: relative;
+  background-color: white;
+  padding: 40px;
+  width: 100%;
+  height: auto;
+  min-height: 50vh;
+  text-align: center;
+}
+
+.software-head {
+  text-align: center;
+  font-family: "Heebo", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  padding-top: 3rem;
+  color: black;
+  position: absolute;
+  top: -4vh;
+  margin-left: 35%;
+}
+#first-section {
+  height: 65vh;
+}
+#blue-section {
+  background-color: #e9f5fa;
+  height: 63vh;
+}
+
+.software-slider-container {
+  position: absolute;
+  top: -42.5vh;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100vh;
+}
+
+.software-card {
+  width: 28%;
+  height: 85vh;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  background-color: white;
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.software-title {
+  color: red;
+  font-size: 1.5rem;
+  padding-top: 0.7rem;
+  padding-left: 1rem;
+  text-align: start;
+  font-family: "Heebo", sans-serif;
+  font-weight: 300;
+}
+
+.software-description {
+  color: black;
+  text-align: start;
+  font-size: 0.85rem;
+  line-height: 1.7;
+  font-family: "Heebo", sans-serif;
+  margin-top: 1rem;
+  height: 61vh;
+  padding-top: 3rem;
+}
+
+.software-button {
+  height: 7vh;
+  margin-left: 1rem;
+  background-color: #2da4d7;
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  width: 90%;
+  align-items: center;
+}
+
+.button2 {
+  background-color: red;
+  border: none;
+  height: 6.5vh;
+  padding: 0 1rem;
+  border-radius: 2rem;
+  color: white;
+  font-size: 0.85rem;
+  position: absolute;
+  top: 48vh;
+  left: 82%;
+  font-family: "Heebo", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .software-card {
+    width: 45%;
+    /* height: auto; */
+    height: 70vh;
+    margin: 10px;
+  }
+
+  .software-description {
+    font-size: 1.1rem;
+  }
+  #blue-section {
+    background-color: #e9f5fa;
+    height: 120vh;
+  }
+  #first-section {
+    height: 55vh;
+  }
+  .software-button {
+    font-size: 1.1rem;
+  }
+  .button2 {
+    top: 108vh;
+    left: 77%;
+  }
+  .software-head {
+    padding-top: 4rem;
+    top: -4vh;
+    margin-left: 20%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .software-card {
+    width: 93%;
+    height: 50vh;
+    margin: 10px;
+  }
+
+  .profile-description {
+    font-size: 1.3rem;
+    margin-top: 10px;
+  }
+  #blue-section {
+    background-color: #e9f5fa;
+    height: 130vh;
+  }
+  .software-button {
+    font-size: 1.3rem;
+    height: 10vh;
+  }
+  .button2 {
+    top: 119vh;
+    left: 65%;
+  }
+  .software-head {
+    margin-left: 10%;
+    font-size: 2rem;
+  }
+}

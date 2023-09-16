@@ -1,0 +1,137 @@
+.project {
+  display: flex;
+  background-color: #e9f5fa;
+  height: 88vh;
+}
+
+.project-left {
+  width: 50%;
+}
+.project-left img {
+  height: 70vh;
+  width: 87%;
+  margin-top: 3rem;
+  border-radius: 0.8rem;
+  object-fit: cover;
+  margin-left: 3.8rem;
+}
+
+.project-right {
+  width: 50%;
+}
+.project-right span {
+  font-weight: bold;
+}
+.project-right h1 {
+  font-family: "Heebo", sans-serif;
+  color: black;
+  font-size: 2.4rem;
+  padding-top: 10rem;
+  font-weight: 400;
+}
+.project-right p {
+  font-family: "Heebo", sans-serif;
+  color: black;
+  font-size: 1.16rem;
+  padding-top: 0.5rem;
+  line-height: 1.7;
+}
+.project-right button {
+  height: 7vh;
+  background-color: #2da4d7;
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  width: 25%;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  font-family: "Heebo", sans-serif;
+}
+
+.project-right .text {
+  width: 91%;
+}
+
+@media screen and (max-width: 768px) {
+  .project {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .project-left,
+  .project-right {
+    width: 100%;
+  }
+  .project-right h1 {
+    font-size: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2.5rem;
+  }
+  .project-right p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.1rem;
+  }
+
+  .project-left img {
+    height: auto;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 2rem;
+  }
+  .project-right .text {
+    width: 100%;
+  }
+  .project-right button {
+    width: 30%;
+    margin-left: 1rem;
+    height: 6vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project {
+    flex-direction: column-reverse;
+    height: 80vh;
+  }
+  .project-left,
+  .project-right {
+    width: 100%;
+  }
+
+  .project-right h1,
+  .project-right p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .project-right h1 {
+    font-size: 1.7rem;
+    padding-top: 0.5rem;
+  }
+
+  .project-left img {
+    height: 50vh;
+    width: 92%;
+    margin-top: 2rem;
+    margin-left: 4%;
+    margin-bottom: 2rem;
+  }
+  .project-right .text {
+    width: 100%;
+  }
+  .project-right button {
+    width: 35%;
+    margin-left: 1rem;
+    height: 5vh;
+  }
+}
+@media screen and (max-width: 404px) {
+  .project {
+    height: 85vh;
+  }
+  .project-right h1 {
+    padding-top: 0.5rem;
+  }
+}

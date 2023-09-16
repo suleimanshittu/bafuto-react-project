@@ -1,0 +1,76 @@
+.carousel-container {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-div1,
+.carousel-div2,
+.carousel-div3,
+.carousel-div4 {
+  display: flex;
+  /* justify-content: center; */
+  height: 70vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+.carousel-div1 {
+  background-color: green;
+}
+.carousel-div2 {
+  background-color: blue;
+}
+.carousel-div3 {
+  background-color: brown;
+}
+.carousel-div4 {
+  background-color: red;
+}
+.carousel-div1 .left {
+  background-color: red;
+  text-align: left;
+  margin-top: 4rem;
+  margin-left: 3.5rem;
+  height: 50vh;
+}
+.carousel-div1 .left h1 {
+  font-size: 3rem;
+}
+.carousel-div1 .left p {
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+.carousel-div1 .left button {
+  margin-top: 1rem;
+}
+.img1 {
+  height: 50vh;
+  margin-left: 4rem;
+  margin-top: 4rem;
+  object-fit: cover;
+}
+
+.carousel.carousel-slider .control-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel.carousel-slider .control-dots .dot {
+  width: 10px; /* Adjust the width of the dots */
+  height: 10px; /* Adjust the height of the dots */
+  margin: 0 5px; /* Adjust the margin between the dots */
+  background-color: #999; /* Dot color when inactive */
+  border: none;
+  border-radius: 50%; /* Make the dots round */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Style for the active dot */
+.carousel.carousel-slider .control-dots .dot.selected {
+  background-color: #333; /* Dot color when active */
+}

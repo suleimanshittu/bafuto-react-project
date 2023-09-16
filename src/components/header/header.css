@@ -1,0 +1,140 @@
+header {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e9f5fa;
+  /* background-color: red; */
+}
+
+header .container {
+  width: 91%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 20%;
+}
+
+.logo h1 {
+  font-size: 2rem;
+  color: black;
+}
+.navbar1 {
+  list-style-type: none;
+}
+.button1 {
+  background-color: red;
+  border: none;
+  height: 6.5vh;
+  padding: 0 1rem;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.7rem;
+}
+
+.navbar {
+  height: 100%;
+  width: 30%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 24rem;
+}
+
+.navbar li {
+  font-size: 0.85rem;
+  height: 60%;
+  padding: 0 1rem;
+  transition: all ease-in-out 0.3s;
+  color: black;
+}
+
+.navbar li a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar li:hover,
+.navbar .active {
+  color: #fddc0f;
+}
+
+.btn_container {
+  width: 20%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_container button {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-size: 30px;
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  header .container {
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    transition: all ease-in-out 0.5s;
+  }
+
+  .navbar {
+    height: calc(104vh - 100px);
+    position: absolute;
+    top: 80px;
+    width: 65%;
+    right: -200%;
+    background-color: #29abe2;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    transition: all ease-in-out 0.5s;
+  }
+  .navbar1 {
+    display: none;
+  }
+
+  .navbar.active {
+    right: 0;
+  }
+
+  .navbar li {
+    font-size: 18px;
+    text-transform: uppercase;
+    height: 100px;
+    width: 90%;
+    padding: 0 1rem;
+    transition: all ease-in-out 0.3s;
+    color: white;
+  }
+
+  .btn_container {
+    display: block;
+  }
+}

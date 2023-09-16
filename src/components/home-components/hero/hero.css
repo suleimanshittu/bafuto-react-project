@@ -1,0 +1,135 @@
+.hero {
+  height: 128vh;
+  background-color: #e9f5fa;
+  margin-top: 5rem;
+}
+.hero h1 {
+  color: black;
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 2.5rem;
+  font-family: "Heebo", sans-serif;
+}
+.masterdiv {
+  display: flex;
+}
+.p1 {
+  padding-top: 7rem;
+  color: black;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  font-family: "Heebo", sans-serif;
+  width: 90%;
+}
+.p2 {
+  color: black;
+  padding-top: 1rem;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  font-family: "Heebo", sans-serif;
+  width: 90%;
+}
+.masterdiv button {
+  height: 7vh;
+  width: 17%;
+  border-radius: 5rem;
+  background-color: #2da4d7;
+  color: white;
+  border: none;
+  margin-top: 1rem;
+}
+.masterdiv button:hover {
+  background-color: #e6e6e6;
+  color: #29abe2;
+}
+.right {
+  width: 55%;
+}
+.left {
+  width: 50%;
+}
+.left img {
+  height: 90vh;
+  width: 85%;
+  margin-left: 3.5rem;
+  margin-top: 3.5rem;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 130vh;
+    margin-top: 3rem;
+  }
+
+  .hero h1 {
+    padding-top: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .masterdiv {
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .left img {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 2rem;
+    height: 60vh;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .p1 {
+    padding-top: 2rem;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    width: 95%;
+  }
+  .p2 {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    width: 95%;
+  }
+
+  .masterdiv button {
+    width: 30%;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    height: 140vh;
+    margin-top: 2rem;
+  }
+
+  .hero h1 {
+    padding-top: 1rem;
+    font-size: 1.8rem;
+    margin-top: 80px;
+  }
+
+  .masterdiv button {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 559px) {
+  .hero {
+    height: 135vh;
+  }
+}
+@media screen and (max-width: 414px) {
+  .hero {
+    height: 150vh;
+  }
+}

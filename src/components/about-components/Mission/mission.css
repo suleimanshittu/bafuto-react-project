@@ -1,0 +1,48 @@
+.mission {
+  background-color: white;
+  height: 161vh;
+}
+
+.mission-headerdiv {
+  background-color: #e9f5fa;
+  width: 9.5%;
+  padding: 0.5rem 0rem;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  font-size: 0.7rem;
+  border-radius: 2rem;
+  font-family: "Heebo", sans-serif;
+  color: black;
+  margin-top: 1rem;
+}
+
+.mission-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 96%;
+}
+
+@media screen and (max-width: 768px) {
+  .mission {
+    height: auto;
+  }
+  .mission-headerdiv {
+    width: 22%;
+    font-size: 0.8rem;
+  }
+  .mission-card-container {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mission-headerdiv {
+    width: 30%;
+  }
+  .mission-card-container {
+    margin-bottom: 2rem;
+  }
+}

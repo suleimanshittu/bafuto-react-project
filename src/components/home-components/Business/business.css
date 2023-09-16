@@ -1,0 +1,95 @@
+.business {
+  display: flex;
+  background-color: white;
+  height: 88vh;
+}
+.business-left {
+  width: 50%;
+}
+.business-left span {
+  font-weight: 400;
+}
+.business-left h1 {
+  font-family: "Heebo", sans-serif;
+  color: black;
+  font-size: 2.3rem;
+  padding-top: 10rem;
+  padding-left: 3.8rem;
+}
+.business-left p {
+  font-family: "Heebo", sans-serif;
+  color: black;
+  font-size: 1.05rem;
+  padding-left: 3.8rem;
+  padding-top: 0.5rem;
+  line-height: 1.7;
+}
+.business-right {
+  width: 50%;
+}
+.business-right img {
+  height: 70vh;
+  width: 87%;
+  margin-top: 3rem;
+  border-radius: 0.8rem;
+  object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .business {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .business-left,
+  .business-right {
+    width: 100%;
+  }
+  .business-left h1 {
+    font-size: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2.5rem;
+  }
+  .business-left p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.1rem;
+  }
+
+  .business-right img {
+    height: auto;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .business {
+    flex-direction: column;
+    height: 80vh;
+  }
+
+  .business-left,
+  .business-right {
+    width: 100%;
+  }
+
+  .business-left h1,
+  .business-left p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .business-left h1 {
+    font-size: 2rem;
+  }
+
+  .business-right img {
+    height: 50vh;
+    width: 92%;
+    margin-top: 2rem;
+    margin-left: 4%;
+    margin-bottom: 2.5rem;
+  }
+}

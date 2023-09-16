@@ -1,0 +1,130 @@
+.rebuild {
+  background-color: white;
+}
+.rebuild-headerdiv {
+  background-color: #e9f5fa;
+  width: 10%;
+  padding: 0.5rem 0rem;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  font-size: 0.7rem;
+  border-radius: 2rem;
+  font-family: "Heebo", sans-serif;
+  color: black;
+  margin-top: 1rem;
+}
+
+.rebuild-div {
+  display: flex;
+  background-color: white;
+  height: 88vh;
+}
+
+.rebuild-left {
+  width: 50%;
+}
+.rebuild-left span {
+  font-weight: bold;
+}
+.rebuild-left h1 {
+  font-family: "Heebo", sans-serif;
+  color: black;
+  font-size: 2.1rem;
+  padding-top: 6.5rem;
+  padding-left: 3.8rem;
+  font-weight: 400;
+}
+.rebuild-left p {
+  font-family: "Heebo", sans-serif;
+  color: black;
+  font-size: 1.06rem;
+  padding-left: 3.8rem;
+  padding-top: 1rem;
+  line-height: 1.7;
+}
+.rebuild-right {
+  width: 50%;
+}
+.rebuild-right img {
+  height: 70vh;
+  width: 87%;
+  margin-top: 3rem;
+  border-radius: 0.8rem;
+  object-fit: cover;
+}
+.rebuild-left .text {
+  width: 90%;
+}
+
+@media screen and (max-width: 768px) {
+  .rebuild-div {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .rebuild-left,
+  .rebuild-right {
+    width: 100%;
+  }
+  .rebuild-left h1 {
+    font-size: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2.5rem;
+  }
+  .rebuild-left p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.1rem;
+  }
+
+  .rebuild-right img {
+    height: auto;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 2rem;
+  }
+  .rebuild-left .text {
+    width: 100%;
+  }
+  .rebuild-headerdiv {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .rebuild-div {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .rebuild-left,
+  .rebuild-right {
+    width: 100%;
+  }
+
+  .rebuild-left h1,
+  .rebuild-left p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .rebuild-left h1 {
+    font-size: 2rem;
+  }
+
+  .rebuild-right img {
+    height: 50vh;
+    width: 92%;
+    margin-top: 2rem;
+    margin-left: 4%;
+    margin-bottom: 2.5rem;
+  }
+  .rebuild-left .text {
+    width: 100%;
+  }
+  .rebuild-headerdiv {
+    width: 30%;
+  }
+}
