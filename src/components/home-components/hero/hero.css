@@ -1,7 +1,7 @@
 .hero {
   height: 128vh;
   background-color: #e9f5fa;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
 }
 .hero h1 {
   color: black;
@@ -60,7 +60,7 @@
 @media screen and (max-width: 768px) {
   .hero {
     height: 130vh;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
   }
 
   .hero h1 {
@@ -110,7 +110,7 @@
 @media screen and (max-width: 480px) {
   .hero {
     height: 140vh;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
   }
 
   .hero h1 {

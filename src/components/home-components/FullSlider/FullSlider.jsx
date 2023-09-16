@@ -15,9 +15,9 @@ const FullSlider = () => {
   };
 
   return (
-    <div className="slider">
-      <Slider {...settings}>
-        <div className="card"></div>
+    <div className="slider-wrapper">
+      <Slider className="slider" {...settings}>
+        <div className="card1"></div>
         <div className="card2"></div>
         <div className="card3"></div>
         <div className="card4"></div>
@@ -25,5 +25,4 @@ const FullSlider = () => {
     </div>
   );
 };
-
 export default FullSlider;

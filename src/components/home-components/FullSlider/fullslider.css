@@ -1,26 +1,34 @@
-.slider {
-  width: 100%;
-  max-width: 100%;
-}
-.card {
+.card1 {
   background-color: blue;
   width: 100%;
-  height: 60vh;
+  height: 76vh;
 }
 .card2 {
   background-color: orange;
   width: 100%;
-  height: 60vh;
+  height: 76vh;
 }
 .card3 {
   background-color: bisque;
   width: 100%;
-  height: 60vh;
+  height: 76vh;
 }
 .card4 {
   background-color: brown;
   width: 100%;
-  height: 60vh;
+  height: 76vh;
+}
+.slider-wrapper {
+  position: relative;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  height: 90vh;
+  background-color: white;
 }
 .slick-dots {
   display: flex;
@@ -34,4 +42,18 @@
 .slick-dots li {
   margin: 5px 5px;
   color: white;
+}
+
+.slick-dots li button {
+  width: 15px;
+  height: 15px;
+  background-image: url("../../../images//image2.png");
+  background-size: cover;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+
+.slick-dots li.slick-active button {
+  background-image: url("../../../images//image3.png");
 }

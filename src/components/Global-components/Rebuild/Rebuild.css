@@ -84,6 +84,7 @@
     width: 95%;
     margin-left: 2.5%;
     margin-top: 2rem;
+    margin-bottom: 2.5rem;
   }
   .rebuild-left .text {
     width: 100%;
@@ -96,7 +97,7 @@
 @media screen and (max-width: 480px) {
   .rebuild-div {
     flex-direction: column;
-    height: 100vh;
+    height: auto;
   }
 
   .rebuild-left,

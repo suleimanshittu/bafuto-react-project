@@ -34,7 +34,6 @@
   }
   .mission-card-container {
     width: 100%;
-    margin-bottom: 2rem;
   }
 }
 
@@ -42,7 +41,10 @@
   .mission-headerdiv {
     width: 30%;
   }
+  .mission {
+    height: 186vh;
+  }
   .mission-card-container {
-    margin-bottom: 2rem;
+    width: 100%;
   }
 }
