@@ -8,15 +8,13 @@ import Rebuild from "../../components/Global-components/Rebuild/Rebuild";
 import ProfileSlider from "../../components/home-components/ProfileSlider/ProfileSlider";
 import Subscribe from "../../components/home-components/Subscribe/Subscribe";
 import Footer from "../../components/Global-components/Footer/Footer";
-// import Carouselcomponent from "../../components/home-components/Carousel/Carouselcomponent";
-import FullSlider from "../../components/home-components/FullSlider/FullSlider";
+// import FullSlider from "../../components/home-components/FullSlider/FullSlider";
 
 export default function Home({ handleClick, click }) {
   return (
     <div>
       <Header click={click} handleClick={handleClick} />
-      <FullSlider />
-      {/* <Carouselcomponent /> */}
+      {/* <FullSlider /> */}
       <Hero />
       <Software />
       <Business />
