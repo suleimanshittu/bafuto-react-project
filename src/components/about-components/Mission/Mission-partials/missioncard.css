@@ -46,7 +46,8 @@
     width: 90%;
     height: auto;
     margin: 10px;
-    margin-top: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
   }
   .mission-card img {
     height: 25vh;
@@ -65,7 +66,8 @@
     width: 100%;
     height: auto;
     margin: 10px;
-    margin-top: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
   }
   .mission-card img {
     height: 25vh;

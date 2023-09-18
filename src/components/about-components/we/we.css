@@ -119,7 +119,7 @@
 
 @media (max-width: 480px) {
   .we {
-    height: 198vh;
+    height: auto;
   }
 
   .we-headerdiv {
@@ -151,5 +151,9 @@
 
   .we .left {
     width: 100%;
+  }
+  .we .right {
+    width: 100%;
+    margin-bottom: 3rem;
   }
 }

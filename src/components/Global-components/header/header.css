@@ -4,7 +4,6 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #e9f5fa;
-  /* background-color: red; */
 }
 
 header .container {
@@ -23,9 +22,11 @@ header .container {
   font-size: 2rem;
   color: black;
 }
+
 .navbar1 {
   list-style-type: none;
 }
+
 .button1 {
   background-color: red;
   border: none;
@@ -34,6 +35,14 @@ header .container {
   border-radius: 20px;
   color: white;
   font-size: 0.7rem;
+}
+
+.button1:hover {
+  background-color: #e6e6e6;
+  color: red;
+  cursor: pointer;
+  border: 1px solid red;
+  box-shadow: rgba(238, 35, 36) 0px 1px 3px 0px;
 }
 
 .navbar {
@@ -89,13 +98,14 @@ header .container {
 
 @media screen and (max-width: 768px) {
   header {
-    position: fixed;
+    position: fixed; /* Make the header fixed at the top */
     top: 0;
     width: 100%;
+    z-index: 100; /* Ensure it's above other content */
   }
 
   header .container {
-    position: relative;
+    position: relative; /* Reset container positioning */
     width: 100%;
     padding: 0 10px;
     transition: all ease-in-out 0.5s;

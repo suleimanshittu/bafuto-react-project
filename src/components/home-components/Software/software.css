@@ -82,6 +82,20 @@
   width: 90%;
   align-items: center;
 }
+.software-button:hover {
+  background-color: #e6e6e6;
+  color: #29abe2;
+  box-shadow: rgba(45, 164, 225) 0px 1px 3px 0px;
+  cursor: pointer;
+  border: 1.5px solid #29abe2;
+}
+.button2:hover {
+  background-color: #e6e6e6;
+  color: red;
+  box-shadow: rgba(238, 35, 36) 0px 1px 3px 0px;
+  cursor: pointer;
+  border: 1.5px solid red;
+}
 
 .button2 {
   background-color: red;
@@ -131,26 +145,31 @@
 
 @media screen and (max-width: 480px) {
   .software-card {
-    width: 93%;
-    height: 50vh;
+    width: 95%;
+    height: 40vh;
     margin: 10px;
   }
 
-  .profile-description {
-    font-size: 1.3rem;
-    margin-top: 10px;
+  .software-description {
+    font-size: 1.05rem;
+    margin-top: 30px;
+    padding-top: 0rem;
+    height: 50vh;
   }
   #blue-section {
     background-color: #e9f5fa;
-    height: 130vh;
+    height: 98vh;
   }
   .software-button {
     font-size: 1.3rem;
-    height: 10vh;
+    height: 5vh;
+    width: 100%;
+    margin-left: 0rem;
   }
   .button2 {
-    top: 119vh;
+    top: 88vh;
     left: 65%;
+    height: 5vh;
   }
   .software-head {
     margin-left: 10%;

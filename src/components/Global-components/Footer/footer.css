@@ -42,7 +42,13 @@
   font-size: 0.95rem;
   font-family: "Heebo", sans-serif;
 }
-
+.footerdiv1 button:hover {
+  background-color: #e6e6e6;
+  color: red;
+  box-shadow: rgba(238, 35, 36) 0px 1px 3px 0px;
+  cursor: pointer;
+  border: 1.5px solid red;
+}
 .footerdiv2,
 .footerdiv3 {
   width: 15%;

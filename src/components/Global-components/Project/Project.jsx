@@ -1,5 +1,6 @@
 import React from "react";
 import "./project.css";
+import { Link } from "react-router-dom";
 
 export default function Project() {
   return (
@@ -20,7 +21,9 @@ export default function Project() {
             We can help you bring your ideas to life. Let's talk about what we
             can build and raise together.
           </p>
-          <button>Connect With Us</button>
+          <Link to="/contact">
+            <button>Connect With Us</button>
+          </Link>
         </div>
       </div>
     </section>

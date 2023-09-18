@@ -1,7 +1,7 @@
 .hero {
   height: 128vh;
   background-color: #e9f5fa;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
 }
 .hero h1 {
   color: black;
@@ -41,6 +41,8 @@
 .masterdiv button:hover {
   background-color: #e6e6e6;
   color: #29abe2;
+  box-shadow: rgba(45, 164, 225) 0px 2px 4px 0px;
+  cursor: pointer;
 }
 .right {
   width: 55%;
@@ -116,11 +118,16 @@
   .hero h1 {
     padding-top: 1rem;
     font-size: 1.8rem;
-    margin-top: 80px;
+    /* margin-top: 80px; */
   }
 
   .masterdiv button {
     width: 30%;
+  }
+  .masterdiv button {
+    height: 5vh;
+    border-radius: 6rem;
+    width: 35%;
   }
 }
 @media screen and (max-width: 559px) {

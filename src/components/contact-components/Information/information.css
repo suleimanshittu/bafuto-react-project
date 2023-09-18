@@ -293,6 +293,13 @@
   font-family: "Heebo", sans-serif;
   margin-left: 37%;
 }
+.information-right button:hover {
+  background-color: #e6e6e6;
+  color: #29abe2;
+  box-shadow: rgba(45, 164, 225) 0px 1px 3px 0px;
+  cursor: pointer;
+  border: 1.5px solid #29abe2;
+}
 @media (max-width: 768px) {
   .information {
     height: auto;

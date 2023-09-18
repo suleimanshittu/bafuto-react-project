@@ -1,5 +1,6 @@
 import React from "react";
 import "./hero.css";
+import { Link } from "react-router-dom";
 
 export default function Hero({ closeNavbar }) {
   return (
@@ -28,7 +29,9 @@ export default function Hero({ closeNavbar }) {
             solutions that automate your business processes, increase
             efficiency, and improve your bottom line.
           </p>
-          <button>Learn More</button>
+          <Link to="/about">
+            <button>Learn More</button>
+          </Link>
         </div>
       </div>
     </div>

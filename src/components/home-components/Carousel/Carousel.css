@@ -1,0 +1,164 @@
+.carousel-container {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-div1,
+.carousel-div2,
+.carousel-div3,
+.carousel-div4 {
+  display: flex;
+  width: 100%;
+  height: 76vh;
+  box-sizing: border-box;
+  background-color: rgb(24, 165, 252);
+  flex-wrap: wrap;
+}
+.carousel-div1 .left {
+  text-align: left;
+  height: auto;
+  width: 50%;
+}
+.carousel-div1 .right {
+  height: auto;
+  width: 50%;
+}
+.carousel-div1 .left h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  padding-left: 5rem;
+  padding-top: 5rem;
+}
+.carousel-div1 .left p {
+  font-size: 1.1rem;
+  padding-top: 1rem;
+  padding-left: 5rem;
+  line-height: 1.5;
+}
+.carousel-div1 .left button {
+  margin-top: 1rem;
+  margin-left: 5rem;
+  background-color: red;
+  border: none;
+  height: 6.5vh;
+  padding: 0 1rem;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.8rem;
+}
+.carousel-div1 .left button:hover {
+  background-color: #e6e6e6;
+  color: red;
+  cursor: pointer;
+  border: 1px solid red;
+}
+.carousel-container .carousel-div1 .right img {
+  width: 80%;
+  height: 58vh;
+  margin-top: 5rem;
+  object-fit: cover;
+}
+
+.carousel.carousel-slider .control-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel.carousel-slider .control-dots .dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #999;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel.carousel-slider .control-dots .dot.selected {
+  background-color: red;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-container .carousel-div1 .right img {
+    display: none;
+  }
+  .carousel-div1 .right {
+    height: auto;
+    width: 100%;
+    background-color: green;
+    display: none;
+    height: 50vh;
+  }
+  .carousel-div1 .left {
+    text-align: left;
+    height: auto;
+    width: 100%;
+    height: 50vh;
+  }
+  .carousel-div1,
+  .carousel-div2,
+  .carousel-div3,
+  .carousel-div4 {
+    height: 50vh;
+    margin-top: 80px;
+  }
+  .carousel-div1 .left h1 {
+    font-size: 2.6rem;
+    font-weight: 500;
+    padding-left: 2.5rem;
+    padding-top: 6rem;
+    line-height: 1;
+  }
+  .carousel-div1 .left p {
+    font-size: 1.2rem;
+    padding-left: 2.5rem;
+    line-height: 1.7;
+    width: 95%;
+  }
+  .carousel-div1 .left button {
+    margin-left: 2.5rem;
+    background-color: red;
+    height: 5vh;
+    padding: 0 1rem;
+    border-radius: 30px;
+    color: white;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .carousel-div1,
+  .carousel-div2,
+  .carousel-div3,
+  .carousel-div4 {
+    height: 60vh;
+    margin-top: 80px;
+  }
+  .carousel-div1 .left h1 {
+    font-size: 1.9rem;
+    font-weight: 500;
+    padding-left: 1rem;
+    padding-top: 6rem;
+    line-height: 1;
+  }
+  .carousel-div1 .left p {
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    line-height: 1.7;
+    width: 95%;
+  }
+  .carousel-div1 .left button {
+    margin-left: 1rem;
+    background-color: red;
+    height: 5vh;
+    padding: 0 1rem;
+    border-radius: 30px;
+    color: white;
+    font-size: 1rem;
+  }
+}

@@ -5,6 +5,7 @@ import { BiLogoTwitter } from "react-icons/bi";
 import { BiLogoInstagram } from "react-icons/bi";
 import { BiLogoLinkedinSquare } from "react-icons/bi";
 import { BiLogoYoutube } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -24,10 +25,18 @@ export default function Footer() {
         <div className="footerdiv2">
           <h1>Company</h1>
           <div className="list">
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Our Services</li>
-            <li>Contact Us</li>
+            <Link to="/">
+              <li>Home</li>
+            </Link>
+            <Link to="/about">
+              <li>About Us</li>
+            </Link>
+            <Link to="/services">
+              <li>Our Services</li>
+            </Link>
+            <Link to="/contact">
+              <li>Contact Us</li>
+            </Link>
           </div>
         </div>
         <div className="footerdiv3">

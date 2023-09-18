@@ -26,17 +26,18 @@
 .head h1 span {
   font-weight: bold;
 }
-
 .profile-slider-container {
   display: flex;
-  flex-wrap: wrap;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  /* flex-wrap: wrap; */
   justify-content: center;
-  background-color: white;
   height: 100vh;
 }
 
 .profile-card {
-  width: 28%;
+  flex: 0 0 320px;
+  width: 30%;
   height: 90vh;
   margin-left: 20px;
   margin-bottom: 20px;
@@ -66,14 +67,14 @@
 }
 
 .profile-name {
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin-top: 15px;
   text-align: center;
   font-family: "Heebo", sans-serif;
   color: black;
 }
 
-.profile-description {
+.profile-card .profile-description {
   text-align: center;
   color: black;
   font-family: "Heebo", sans-serif;
@@ -81,30 +82,77 @@
   margin-top: 15px;
   line-height: 1.7;
 }
+.slider-controls {
+  display: flex;
+  justify-content: center;
+}
+.slider-controls .slider-button1 {
+  background-color: #29abe2;
+  border: none;
+  height: 8.5vh;
+  width: 3%;
+  color: white;
+  font-size: 2rem;
+  border-radius: 0.3rem;
+  margin-bottom: 2.5rem;
+}
+.slider-controls .slider-button2 {
+  background-color: #29abe2;
+  border: none;
+  height: 8.5vh;
+  width: 3%;
+  color: white;
+  font-size: 2rem;
+  margin-left: 1rem;
+  border-radius: 0.3rem;
+  margin-bottom: 2.5rem;
+}
+
+.slider-controls .slider-button1:hover {
+  background-color: #e6e6e6;
+  color: #29abe2;
+  box-shadow: rgba(45, 164, 225) 0px 1px 3px 0px;
+  cursor: pointer;
+  border: 1.5px solid #29abe2;
+}
+.slider-controls .slider-button2:hover {
+  background-color: #e6e6e6;
+  color: #29abe2;
+  box-shadow: rgba(45, 164, 225) 0px 1px 3px 0px;
+  cursor: pointer;
+  border: 1.5px solid #29abe2;
+}
 
 @media screen and (max-width: 768px) {
   .profile-card {
     width: 45%;
     height: auto;
-    margin: 10px;
+    margin: 10px; /* Adjust the width for smaller screens */
+    /* other styles ... */
   }
-
   .profile-description {
     font-size: 0.8rem;
   }
   .headerdiv {
     width: 15%;
   }
-  /* changing later */
-  .profile-slider-container {
-    height: 120vh;
-  }
 }
+
 @media screen and (max-width: 480px) {
+  .profile-slider-container {
+    height: auto;
+    display: flex;
+  }
+  @media screen and (max-width: 480px) {
+    .profile-slider-container {
+      height: auto;
+    }
+  }
   .profile-card {
     width: 90%;
     height: auto;
     margin: 10px;
+    flex: 0 0 390px;
   }
 
   .profile-description {
@@ -113,5 +161,18 @@
   }
   .headerdiv {
     width: 25%;
+  }
+  .slider-controls .slider-button1 {
+    width: 12%;
+    height: 6vh;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  .slider-controls .slider-button2 {
+    width: 13%;
+    width: 12%;
+    height: 6vh;
+    font-size: 1.5rem;
+    margin-top: 1rem;
   }
 }

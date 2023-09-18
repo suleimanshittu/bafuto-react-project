@@ -1,5 +1,6 @@
 import React from "react";
 import "./software.css";
+import { Link } from "react-router-dom";
 
 const Software = () => {
   const cards = [
@@ -37,11 +38,15 @@ const Software = () => {
             <div key={card.id} className="software-card">
               <h1 className="software-title">{card.title}</h1>
               <p className="software-description">{card.description}</p>
-              <button className="software-button">{card.button}</button>
+              <Link to="/contact">
+                <button className="software-button">{card.button}</button>
+              </Link>
             </div>
           ))}
         </div>
-        <button className="button2">View All Services</button>
+        <Link to="/services">
+          <button className="button2">View All Services</button>
+        </Link>
       </section>
     </section>
   );

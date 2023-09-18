@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./profileslider.css";
 
 const ProfileSlider = () => {
@@ -26,6 +26,27 @@ const ProfileSlider = () => {
     },
   ];
 
+  const [sliderPosition, setSliderPosition] = useState(0);
+  const [cardsToSlide, setCardsToSlide] = useState(3);
+
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      setCardsToSlide(1);
+    } else if (window.innerWidth < 1200) {
+      setCardsToSlide(2);
+    } else {
+      setCardsToSlide(3);
+    }
+  }, []);
+
+  const slideLeft = () => {
+    setSliderPosition(sliderPosition - cardsToSlide);
+  };
+
+  const slideRight = () => {
+    setSliderPosition(sliderPosition + cardsToSlide);
+  };
+
   return (
     <div className="head">
       <br />
@@ -35,7 +56,10 @@ const ProfileSlider = () => {
       <h1>
         What Our <span>Clients</span> Say About <span>Us</span>
       </h1>
-      <div className="profile-slider-container">
+      <div
+        className="profile-slider-container"
+        style={{ transform: `translateX(-${sliderPosition * 30}px)` }}
+      >
         {profiles.map((profile) => (
           <div key={profile.id} className="profile-card">
             <div className="profile-image-bg">
@@ -50,7 +74,24 @@ const ProfileSlider = () => {
           </div>
         ))}
       </div>
+      <div className="slider-controls">
+        <button
+          className="slider-button1"
+          onClick={slideLeft}
+          disabled={sliderPosition === 0}
+        >
+          &lt;
+        </button>
+        <button
+          className="slider-button2"
+          onClick={slideRight}
+          disabled={sliderPosition >= profiles.length - cardsToSlide}
+        >
+          &gt;
+        </button>
+      </div>
     </div>
   );
 };
+
 export default ProfileSlider;
