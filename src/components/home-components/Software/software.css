@@ -74,12 +74,11 @@
 
 .software-button {
   height: 7vh;
-  margin-left: 1rem;
   background-color: #2da4d7;
   border: none;
   border-radius: 2rem;
   color: white;
-  width: 90%;
+  width: 95%;
   align-items: center;
 }
 .software-button:hover {
