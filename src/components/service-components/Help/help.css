@@ -1,0 +1,139 @@
+.help {
+  background-color: white;
+  height: 161vh;
+}
+
+.help-headerdiv {
+  background-color: #e9f5fa;
+  width: 8%;
+  padding: 0.5rem 0rem;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  font-size: 0.7rem;
+  border-radius: 2rem;
+  font-family: "Heebo", sans-serif;
+  color: black;
+  margin-top: 1rem;
+}
+
+.help h1 {
+  text-align: center;
+  font-weight: 400;
+  padding-top: 1rem;
+  color: black;
+  padding-bottom: 4rem;
+  font-size: 2.4rem;
+  font-family: "Heebo", sans-serif;
+}
+.help-slider-container {
+  display: flex;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  height: 100vh;
+}
+
+.help-card {
+  flex: 0 0 320px;
+  width: 30%;
+  height: 90vh;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  background-color: white;
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.help-image {
+  width: 96%;
+  height: 35vh;
+  object-fit: cover;
+  border-radius: 0.8rem;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+.help-name {
+  color: red;
+  font-size: 1.2rem;
+  padding-top: 0.7rem;
+  text-align: start;
+  font-family: "Heebo", sans-serif;
+  font-weight: 300;
+  padding-left: 0.6rem;
+}
+
+.help-card .help-description {
+  text-align: start;
+  color: black;
+  font-family: "Heebo", sans-serif;
+  font-size: 0.8rem;
+  margin-top: 15px;
+  line-height: 1.7;
+  height: 32vh;
+}
+.help-buttton {
+  height: 7vh;
+  background-color: #2da4d7;
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  width: 100%;
+  align-items: center;
+}
+.help-buttton:hover {
+  background-color: #e6e6e6;
+  color: #29abe2;
+  box-shadow: rgba(45, 164, 225) 0px 1px 3px 0px;
+  cursor: pointer;
+  border: 1.5px solid #29abe2;
+}
+
+@media screen and (max-width: 768px) {
+  .help {
+    height: 110vh;
+  }
+  .help-slider-container {
+    height: auto;
+  }
+  .help-card {
+    width: 60%;
+    height: 70vh;
+    margin: 10px;
+  }
+  .help-card .help-description {
+    font-size: 1rem;
+  }
+
+  .help-headerdiv {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .help {
+    height: 110vh;
+  }
+  .help-slider-container {
+    height: auto;
+  }
+  .help-card {
+    width: 90%;
+    height: 70vh;
+    margin: 10px;
+    flex: 0 0 390px;
+  }
+
+  .help-card .help-description {
+    font-size: 1rem;
+    margin-top: 10px;
+    padding-left: 0.6rem;
+  }
+  .help-headerdiv {
+    width: 20%;
+  }
+}

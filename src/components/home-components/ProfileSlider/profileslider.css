@@ -136,17 +136,24 @@
   .headerdiv {
     width: 15%;
   }
+  .slider-controls .slider-button1 {
+    width: 12%;
+    height: 6vh;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  .slider-controls .slider-button2 {
+    width: 12%;
+    height: 6vh;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .profile-slider-container {
     height: auto;
     display: flex;
-  }
-  @media screen and (max-width: 480px) {
-    .profile-slider-container {
-      height: auto;
-    }
   }
   .profile-card {
     width: 90%;
