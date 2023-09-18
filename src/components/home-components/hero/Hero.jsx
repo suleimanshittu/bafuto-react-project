@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Hero({ closeNavbar }) {
   return (
     <div className="hero" onClick={closeNavbar}>
-      <h1>Welcome To Bafuto</h1>
+      <h1>Welcome To Bafuto Institute</h1>
       <div className="masterdiv">
         <div className="left">
           <img

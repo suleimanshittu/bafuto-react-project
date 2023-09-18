@@ -21,9 +21,9 @@ export default function We() {
         </div>
         <div className="right">
           <p className="p1">
-            BlazeSkills is headquartered in Mount Holly Springs, PA, United
-            States. Our business is also registered with the Corporate Affairs
-            Commission in Nigeria under the name BlazeSkills Consulting.
+            Bafuto Institute is headquartered in 62, ikotun/isolo road, ile-iwe
+            bus stop, lagos. Our business is also registered with the Corporate
+            Affairs Commission in Nigeria under the name Bafuto Institute.
           </p>
           <p className="p2">
             We aim to deliver the right solutions, people, and processes that

@@ -35,6 +35,7 @@ header .container {
   border-radius: 20px;
   color: white;
   font-size: 0.7rem;
+  font-family: "Heebo", sans-serif;
 }
 
 .button1:hover {
@@ -62,6 +63,7 @@ header .container {
   padding: 0 1rem;
   transition: all ease-in-out 0.3s;
   color: black;
+  font-family: "Heebo", sans-serif;
 }
 
 .navbar li a {
@@ -113,7 +115,7 @@ header .container {
     height: auto;
     position: fixed;
     top: 80px;
-    width: 50%;
+    width: 30%;
     right: -200%;
     background-color: #29abe2;
     list-style: none;

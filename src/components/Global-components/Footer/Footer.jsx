@@ -12,7 +12,7 @@ export default function Footer() {
     <section className="footer">
       <div className="footer-container">
         <div className="footerdiv1">
-          <h1>About Blazeskills</h1>
+          <h1>About Bafuto</h1>
           <p>
             A leading provider of software development, cloud services, IT
             training, IT staffing, and IT infrastructure setup services. We are
@@ -50,9 +50,9 @@ export default function Footer() {
         <div className="footerdiv4">
           <h1>Contact Us</h1>
           <div className="list">
-            <p>203 North Baltimore Avenue, Mount Holly Springs, PA</p>
-            <li>info@blazeskills.com</li>
-            <li>+1 (717) 516-5561</li>
+            <p>62, IKOTUN/ISOLO ROAD, ILE-IWE BUS STOP, Egbe 100265, Lagos</p>
+            <li>info@bafuto.com</li>
+            <li>+(234) 802 362 4940</li>
             <li>
               <span>
                 <BiLogoFacebookCircle className="icon1" />
@@ -67,7 +67,8 @@ export default function Footer() {
       </div>
       <hr className="underline" />
       <p className="last-paragraph">
-        Copyright © 2023 Bafuto Solutions Systems LLC | All Rights Reserved
+        Copyright © 2023 Bafuto Institute Systems LLC | All Rights Reserved (by){" "}
+        <span>Shittu Suleiman</span>
       </p>
     </section>
   );

@@ -76,7 +76,11 @@
   padding-top: 23px;
   line-height: 1;
 }
-.list li:hover {
+.footerdiv2 .list li:hover {
+  color: #fddc0f;
+  cursor: pointer;
+}
+.footerdiv3 .list li:hover {
   color: #fddc0f;
   cursor: pointer;
 }
@@ -91,6 +95,10 @@
   margin-top: 1.2rem;
   font-family: "Heebo", sans-serif;
 }
+.last-paragraph span {
+  font-weight: bold;
+  font-size: 1rem;
+}
 .list li span {
   display: flex;
   font-size: 1.2rem;
@@ -99,8 +107,16 @@
 .list li span .icon1 {
   margin-left: 10px;
 }
+.list li span .icon1:hover {
+  color: #fddc0f;
+  cursor: pointer;
+}
 .list li span .icon {
   margin-left: 28px;
+}
+.list li span .icon:hover {
+  color: #fddc0f;
+  cursor: pointer;
 }
 @media (max-width: 768px) {
   .footer {

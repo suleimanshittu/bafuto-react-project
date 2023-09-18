@@ -1,5 +1,5 @@
 .we {
-  height: 164vh;
+  height: 170vh;
   background-color: white;
 }
 .we-headerdiv {
@@ -86,6 +86,7 @@
 
   .we .right {
     width: 100%;
+    margin-bottom: 3rem;
   }
 
   .we .left {

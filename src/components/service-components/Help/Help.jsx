@@ -8,7 +8,7 @@ const Help = () => {
       id: 1,
       name: "IT Staffing",
       description:
-        "At BlazeSkills, we understand the challenges associated with recruiting to fill IT positions with the most highly skilled and sought-after IT experts. That's why we're here for you...",
+        "At Bafuto, we understand the challenges associated with recruiting to fill IT positions with the most highly skilled and sought-after IT experts. That's why we're here for you...",
       image:
         "https://blazeskills.com/media/images/gallery/employed%20staff%20illustration.jpg",
     },

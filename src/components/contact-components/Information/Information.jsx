@@ -51,9 +51,9 @@ export default function Information() {
               <HiLocationMarker className="icon" />
             </div>
             <div className="mid-paragraph">
-              <p className="sentence1">+1 (717) 516-5561</p>
-              <p className="sentence2">info@bafutoskills.com</p>
-              <p>203 North Baltimore Avenue, Mount Holly Springs, PA</p>
+              <p className="sentence1">+(234) 802 362 4940</p>
+              <p className="sentence2">info@bafuto.com</p>
+              <p>62, IKOTUN/ISOLO ROAD, ILE-IWE BUS STOP, Egbe 100265, Lagos</p>
             </div>
           </div>
           <div className="bottom">
