@@ -53,6 +53,7 @@ header .container {
   justify-content: space-between;
   align-items: center;
   margin-left: 24rem;
+  z-index: 999;
 }
 
 .navbar li {
@@ -98,34 +99,32 @@ header .container {
 
 @media screen and (max-width: 768px) {
   header {
-    position: fixed; /* Make the header fixed at the top */
-    top: 0;
-    width: 100%;
-    z-index: 100; /* Ensure it's above other content */
+    position: static;
   }
 
   header .container {
-    position: relative; /* Reset container positioning */
+    position: relative;
     width: 100%;
     padding: 0 10px;
     transition: all ease-in-out 0.5s;
   }
 
   .navbar {
-    height: calc(104vh - 100px);
-    position: absolute;
+    height: auto;
+    position: fixed;
     top: 80px;
-    width: 65%;
+    width: 50%;
     right: -200%;
     background-color: #29abe2;
     list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 20px;
+    justify-content: flex-start;
+    gap: 10px;
     align-items: center;
     transition: all ease-in-out 0.5s;
   }
+
   .navbar1 {
     display: none;
   }
@@ -137,7 +136,7 @@ header .container {
   .navbar li {
     font-size: 18px;
     text-transform: uppercase;
-    height: 100px;
+    height: 80px;
     width: 90%;
     padding: 0 1rem;
     transition: all ease-in-out 0.3s;

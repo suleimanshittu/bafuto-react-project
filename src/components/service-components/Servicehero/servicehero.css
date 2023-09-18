@@ -44,9 +44,6 @@
     width: 32%;
     margin-left: 3rem;
   }
-  .servicehero {
-    margin-top: 80px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -61,8 +58,5 @@
   .line {
     width: 47%;
     margin-left: 0.8rem;
-  }
-  .servicehero {
-    margin-top: 80px;
   }
 }

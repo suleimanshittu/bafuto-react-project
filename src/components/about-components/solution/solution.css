@@ -45,9 +45,6 @@
     width: 32%;
     margin-left: 3rem;
   }
-  .solution {
-    margin-top: 80px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -62,8 +59,5 @@
   .line {
     width: 47%;
     margin-left: 0.8rem;
-  }
-  .solution {
-    margin-top: 80px;
   }
 }

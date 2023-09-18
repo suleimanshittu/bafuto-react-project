@@ -133,6 +133,10 @@
     /* margin-left: 8px; */
     flex: 0 0 390px;
   }
+  .help-buttton {
+    height: 5vh;
+    font-size: 1rem;
+  }
 
   .help-card .help-description {
     font-size: 1rem;
