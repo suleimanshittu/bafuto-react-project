@@ -58,10 +58,14 @@ const ProfileSlider = () => {
       </h1>
       <div
         className="profile-slider-container"
-        style={{ transform: `translateX(-${sliderPosition * 30}px)` }}
+        // style={{ transform: `translateX(-${sliderPosition * 30}px)` }}
       >
         {profiles.map((profile) => (
-          <div key={profile.id} className="profile-card">
+          <div
+            key={profile.id}
+            className="profile-card"
+            style={{ transform: `translateX(-${sliderPosition * 410}px)` }}
+          >
             <div className="profile-image-bg">
               <img
                 src={profile.image}

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./help.css";
+import { Link } from "react-router-dom";
 
 const Help = () => {
   const helps = [
@@ -72,6 +73,9 @@ const Help = () => {
     } else {
       setCardsToSlide(3);
     }
+
+    // Set initial slider position to 0
+    setSliderPosition(0);
   }, []);
 
   const slideLeft = () => {
@@ -89,16 +93,19 @@ const Help = () => {
         <p>SERVICES</p>
       </div>
       <h1>We Can Help You In</h1>
-      <div
-        className="help-slider-container"
-        style={{ transform: `translateX(-${sliderPosition * 320}px)` }}
-      >
+      <div className="help-slider-container">
         {helps.map((help) => (
-          <div key={help.id} className="help-card">
+          <div
+            key={help.id}
+            className="help-card"
+            style={{ transform: `translateX(-${sliderPosition * 410}px)` }}
+          >
             <img src={help.image} alt={help.name} className="help-image" />
             <h3 className="help-name">{help.name}</h3>
             <p className="help-description">{help.description}</p>
-            <button className="help-buttton">Get Quote</button>
+            <Link to="/contact">
+              <button className="help-buttton">Get Quote</button>
+            </Link>
           </div>
         ))}
       </div>

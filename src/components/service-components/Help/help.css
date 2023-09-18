@@ -30,13 +30,14 @@
   display: flex;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
-  /* flex-wrap: wrap; */
-  justify-content: center;
   height: 100vh;
+  /* background-color: red; */
+  width: 92%;
+  margin-left: 4%;
 }
 
 .help-card {
-  flex: 0 0 320px;
+  flex: 0 0 340px;
   width: 30%;
   height: 90vh;
   margin-left: 20px;
@@ -44,10 +45,10 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   background-color: white;
   border-radius: 0.8rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: rgba(33, 37, 41, 0.15) 0px 8px 16px 0px;
+  transition: transform 0.3s ease-in-out;
 }
 .help-image {
   width: 96%;
@@ -99,6 +100,8 @@
   }
   .help-slider-container {
     height: auto;
+    width: 100%;
+    margin-left: 0%;
   }
   .help-card {
     width: 60%;
@@ -120,11 +123,14 @@
   }
   .help-slider-container {
     height: auto;
+    width: 100%;
+    margin-left: 0%;
   }
   .help-card {
     width: 90%;
     height: 70vh;
     margin: 10px;
+    /* margin-left: 8px; */
     flex: 0 0 390px;
   }
 
@@ -135,5 +141,10 @@
   }
   .help-headerdiv {
     width: 20%;
+  }
+}
+@media screen and (max-width: 409px) {
+  .help-card {
+    margin-left: 8px;
   }
 }

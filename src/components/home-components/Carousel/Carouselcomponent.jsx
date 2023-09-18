@@ -7,7 +7,14 @@ import { Link } from "react-router-dom";
 const Carouselcomponent = () => {
   return (
     <div className="carousel-container">
-      <Carousel showArrows={true} showThumbs={false} showStatus={false}>
+      <Carousel
+        showArrows={false}
+        showThumbs={false}
+        showStatus={false}
+        autoPlay={true}
+        infiniteLoop={true}
+        interval={5000}
+      >
         <div className="carousel-div1">
           <div className="left">
             <h1>IT staffing</h1>
@@ -92,4 +99,5 @@ const Carouselcomponent = () => {
     </div>
   );
 };
+
 export default Carouselcomponent;

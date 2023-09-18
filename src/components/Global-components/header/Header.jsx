@@ -31,7 +31,7 @@ export default function Header({ click, handleClick }) {
 
         <ul className="navbar1">
           <li>
-            <Link to="/register">
+            <Link to="/">
               <button className="button1">Register For Training</button>
             </Link>
           </li>
