@@ -1,3 +1,7 @@
+# Final Personal Project for Bafuto Institute of Management and Information Technology
+
+Front-end development (Html5, CSS3, React) course completed.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
