@@ -1,85 +1,77 @@
 .software .container {
   position: relative;
   background-color: white;
-  padding: 40px;
-  width: 100%;
-  height: auto;
-  min-height: 50vh;
-  text-align: center;
+  max-width: 100%;
+  padding: 1rem;
 }
 
 .software-head {
-  text-align: center;
-  font-family: "Heebo", sans-serif;
-  font-size: 2.4rem;
-  font-weight: 600;
-  padding-top: 3rem;
   color: black;
-  position: absolute;
-  top: -4vh;
-  margin-left: 35%;
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 2.5rem;
+  font-family: "Heebo", sans-serif;
 }
-#first-section {
-  height: 65vh;
+#white-section {
+  min-height: 50vh;
 }
 #blue-section {
   background-color: #e9f5fa;
-  height: 63vh;
+  min-height: 50vh;
 }
 
 .software-slider-container {
   position: absolute;
-  top: -42.5vh;
+  top: -30vh;
   left: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  height: 100vh;
+  height: auto;
 }
 
 .software-card {
-  width: 28%;
-  height: 85vh;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  padding: 10px;
+  max-width: 20%;
+  margin: 1.5rem 1.5rem;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  align-items: center;
   background-color: white;
-  border-radius: 0.8rem;
+  border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  min-width: 280px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60vh;
 }
 
 .software-title {
   color: red;
-  font-size: 1.5rem;
-  padding-top: 0.7rem;
-  padding-left: 1rem;
-  text-align: start;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 1rem 1rem;
   font-family: "Heebo", sans-serif;
-  font-weight: 300;
 }
 
 .software-description {
   color: black;
   text-align: start;
-  font-size: 0.85rem;
-  line-height: 1.7;
+  font-size: 1.3rem;
+  line-height: 1.5;
   font-family: "Heebo", sans-serif;
-  margin-top: 1rem;
-  height: 61vh;
-  padding-top: 3rem;
+  height: auto;
+  padding: 3rem 3rem;
 }
 
 .software-button {
-  height: 7vh;
   background-color: #2da4d7;
   border: none;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   color: white;
-  width: 95%;
-  align-items: center;
+  padding: 1rem 4rem;
+  font-size: 1rem;
 }
 .software-button:hover {
   background-color: #e6e6e6;
@@ -99,7 +91,6 @@
 .button2 {
   background-color: red;
   border: none;
-  height: 6.5vh;
   padding: 0 1rem;
   border-radius: 2rem;
   color: white;

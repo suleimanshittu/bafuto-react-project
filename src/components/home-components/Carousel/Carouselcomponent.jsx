@@ -16,7 +16,7 @@ const Carouselcomponent = () => {
         interval={5000}
       >
         <div className="carousel-div1">
-          <div className="left">
+          <div className="carousel-left">
             <h1>IT staffing</h1>
             <p>
               In a technological driven World where there is a huge knowledge
@@ -28,7 +28,7 @@ const Carouselcomponent = () => {
               <button className="started-button">Get Started For Free</button>
             </Link>
           </div>
-          <div className="right">
+          <div className="carousel-right">
             <img
               src="https://blazeskills.com/media/images/gallery/employed%20staff%20illustration.jpg"
               alt=""
@@ -36,7 +36,7 @@ const Carouselcomponent = () => {
           </div>
         </div>
         <div className="carousel-div1">
-          <div className="left">
+          <div className="carousel-left">
             <h1>IT Consulting Strategy</h1>
             <p>
               We take it upon ourselves to help you research into the best IT
@@ -48,7 +48,7 @@ const Carouselcomponent = () => {
               <button className="started-button">Get Started For Free</button>
             </Link>
           </div>
-          <div className="right">
+          <div className="carousel-right">
             <img
               src="https://blazeskills.com/media/images/gallery/people%20consulting%20for%20an%20IT%20service.jpg"
               alt=""
@@ -56,7 +56,7 @@ const Carouselcomponent = () => {
           </div>
         </div>
         <div className="carousel-div1">
-          <div className="left">
+          <div className="carousel-left">
             <h1>IT Training Services</h1>
             <p>
               We have selected IT training programmes ranging from the
@@ -69,7 +69,7 @@ const Carouselcomponent = () => {
               <button className="started-button">Get Started For Free</button>
             </Link>
           </div>
-          <div className="right">
+          <div className="carousel-right">
             <img
               src="https://blazeskills.com/media/images/gallery/SKILL%20CONCEPT%20stock%20photo.jpg"
               alt=""
@@ -77,7 +77,7 @@ const Carouselcomponent = () => {
           </div>
         </div>
         <div className="carousel-div1">
-          <div className="left">
+          <div className="carousel-left">
             <h1>IT Infrastructure Design & Development for Startups</h1>
             <p>
               Looking out for custom IT Infrastructure solutions for your
@@ -88,7 +88,7 @@ const Carouselcomponent = () => {
               <button className="started-button">Get Started For Free</button>
             </Link>
           </div>
-          <div className="right">
+          <div className="carousel-right">
             <img
               src="https://blazeskills.com/media/images/gallery/IT%20infrastructure%20design.jpg"
               alt=""

@@ -29,7 +29,7 @@ const Software = () => {
 
   return (
     <section className="software">
-      <section className="container" id="first-section">
+      <section className="container" id="white-section">
         <h1 className="software-head">Talk To Us About</h1>
       </section>
       <section className="container" id="blue-section">
